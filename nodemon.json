@@ -1,0 +1,12 @@
+{
+    "ignore": [
+        ".git",
+        "node_modules",
+        "./build/*"
+    ],
+    "watch": [
+        "./"
+    ],
+    "exec": "yarn clean && tsc && yarn copy-files && node build/app.js",
+    "ext": "ts"
+}
