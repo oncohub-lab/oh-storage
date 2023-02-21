@@ -15,6 +15,11 @@ app.get('/api/v1/tree', async (req: Request, res: Response) => {
   res.status(200).json(treeObj);
 });
 
+app.get('/api/v1/:CID', async (req: Request, res: Response) => {
+  console.log(req.params.CID);
+  res.status(200);
+});
+
 app.get('*', (req: Request, res: Response) => {
   res.status(404).send('<h1>not found</h1>');
 });
