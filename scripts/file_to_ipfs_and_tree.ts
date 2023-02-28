@@ -7,7 +7,7 @@ dotenv.config();
 async function main() {
   try {
     if (process.argv.length < 4) {
-      throw new Error('usage: ts-node file_to_ipfs_and_tree.ts file-path branch-path');
+      throw new Error('usage: ts-node file_to_ipfs_and_tree.ts <file-path> <branch-path>');
     }
     const filepath = process.argv[2];
     const branch = process.argv[3];
